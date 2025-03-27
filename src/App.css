@@ -1,0 +1,126 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Стили формы поиска */
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Общие стили для полей ввода и селектов */
+.search-form input,
+.search-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form input {
+  flex: 1;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Список результатов поиска */
+.search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Карточка результата поиска */
+.search-results li {
+  padding: 15px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f8f9fa30;
+}
+
+/* Стиль для просмотренных статей */
+.search-results li.viewed {
+  background-color: #f8f9fa30;
+}
+
+/* Значок "Просмотрено" */
+.viewed-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #888;
+}
+
+.loader::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+/* Анимация вращения для спиннера */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.article-content {
+  text-align: left;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-paragraph {
+  margin: 0.8em 0;
+}
+
+.article-paragraph h4 {
+  margin: 1em 0 0.5em;
+  color: #fff;
+}
+
+/* Подсветка найденных фрагментов текста */
+.article-content hl {
+  background-color: rgba(255, 255, 0, 0.2);
+  padding: 0 2px;
+  border-radius: 2px;
+}
