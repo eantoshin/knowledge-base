@@ -1,1 +1,0 @@
-{"root":["./src/vite-env.d.ts","./src/hooks/useviewedarticles.ts","./src/services/api.ts","./src/types/api.ts","./src/app.tsx","./src/main.tsx","./src/components/searchform.tsx","./src/components/searchresults.tsx"],"version":"5.7.3"}
